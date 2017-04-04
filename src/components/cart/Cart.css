@@ -1,0 +1,101 @@
+.pageCart {
+  width: 28%;
+  margin: 40px 0 60px;
+}
+@media (max-width: 1040px) {
+  .pageCart {
+    width: 35%;
+  }
+}
+@media (max-width: 880px) {
+  .pageCart {
+    width: 320px;
+    margin: 0 auto 30px;
+  }
+}
+  .pageCart__empty {
+    padding: 120px 30px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    color: #ececec;
+    letter-spacing: 0.03em;
+    border: 5px dashed #ececec;
+  }
+  .pageCart__header {
+    margin: 0 0 20px;
+  }
+    .pageCart__heading {
+      font-size: 24px;
+      font-weight: 500;
+      display: inline-block;
+      line-height: 24px;
+    }
+    .pageCart__totalItem {
+      font-size: 18px;
+      float: right;
+      line-height: 24px;
+    }
+.pageCartGroup {
+  margin: 16px 0;
+}
+.pageCart__submit {
+  display: block;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  background: #eb2a34;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 18px;
+  position: relative;
+}
+  .pageCart__submit:hover::before,
+  .pageCart__submit:hover::after {
+    opacity: .8;
+  }
+  .pageCart__submit::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 4px 4px 4px;
+    border-color: transparent transparent #333333 transparent;
+    opacity: 0;
+    transition: all .15s ease-in-out;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+  .pageCart__submit::after {
+    content: "Not implemented";
+    display: block;
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 8px 12px;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all .15s ease-in-out;
+    pointer-events: none;
+  }
+.pageCart__copy {
+  font-size: 12px;
+  line-height: 18px;
+  color: #bfbfbf;
+  text-align: center;
+  margin-top: 4px;
+}

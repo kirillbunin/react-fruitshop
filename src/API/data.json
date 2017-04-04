@@ -1,0 +1,54 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "title": "fruits"
+    },
+    {
+      "id": 2,
+      "title": "vegetables"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "title": "Apple",
+      "imgurl": "/images/apple.png",
+      "price": "0.25",
+      "weight": "Ca. 150g",
+      "categories": 1,
+      "inStock": true,
+      "discount": null
+    },
+    {
+      "id": 2,
+      "title": "Orange",
+      "imgurl": "/images/orange.png",
+      "price": "0.3",
+      "weight": "Ca. 250g",
+      "categories": 1,
+      "inStock": true,
+      "discount": null
+    },
+    {
+      "id": 3,
+      "title": "Banana",
+      "imgurl": "/images/banana.png",
+      "price": "0.15",
+      "weight": "Ca. 190g",
+      "categories": 1,
+      "inStock": true,
+      "discount": null
+    },
+    {
+      "id": 4,
+      "title": "Papaya",
+      "imgurl": "/images/papaya.png",
+      "price": "0.5",
+      "weight": "Ca. 200g",
+      "categories": [1, 50],
+      "inStock": true,
+      "discount": "THREE_FOR_TWO"
+    }
+  ]
+}

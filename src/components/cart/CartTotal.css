@@ -1,0 +1,11 @@
+.pageCart__totalSumWrap {
+  text-align: right;
+  width: 100%;
+  line-height: 24px;
+  color: #bfbfbf;
+}
+  .pageCart__totalSum {
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+  }

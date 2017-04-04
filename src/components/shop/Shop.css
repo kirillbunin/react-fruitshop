@@ -1,0 +1,21 @@
+.pageShop {
+  display: flex;
+  width: 72%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 30px;
+  box-sizing: border-box;
+  margin: 40px 0 80px;
+}
+@media (max-width: 1040px) {
+  .pageShop {
+    width: 65%;
+  }
+}
+@media (max-width: 880px) {
+  .pageShop {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+}

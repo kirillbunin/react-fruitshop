@@ -1,0 +1,88 @@
+.pageCartItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 0;
+  border-bottom: 1px #ececec solid;
+  line-height: 20px;
+}
+  .pageCartItem:last-child {
+    border-bottom: 0;
+  }
+  .pageCartItem__leftWrap {
+    align-self: center;
+    width: 100px;
+  }
+    .pageCartItem__title {
+      display: block;
+    }
+    .pageCartItem__price {
+      display: block;
+      color: #bfbfbf;
+      font-size: 14px;
+    }
+  .pageCartItem__qtyWrap {}
+    .pageCartItem__qtyDecrease,
+    .pageCartItem__qtyIncrease {
+      border: 0;
+      background: 0;
+      cursor: pointer;
+      font-size: 18px;
+      height: 100%;
+      padding: 0;
+      width: 22px;
+      border: 1px #ececec solid;
+      height: 40px;
+      box-sizing: border-box;
+      vertical-align: top;
+      /*background: #fafafa;*/
+      outline: 0;
+      color: #a8a8a8;
+    }
+    .pageCartItem__qtyDecrease[disabled],
+    .pageCartItem__qtyIncrease[disabled] {
+      cursor: default;
+    }
+    .pageCartItem__qtyDecrease {
+      border-radius: 5px 0 0 5px;
+      border-right: 0;
+    }
+    .pageCartItem__qtyInput {
+      width: 36px;
+      outline: 0;
+      text-align: center;
+      padding: 0;
+      height: 40px;
+      box-sizing: border-box;
+      vertical-align: top;
+      border: 0;
+      border-top: 1px #ececec solid;
+      border-bottom: 1px #ececec solid;
+    }
+    .pageCartItem__qtyIncrease {
+      border-radius: 0 5px 5px 0;
+      border-left: 0;
+    }
+  .pageCartItem__rightWrap {
+    align-self: center;
+    width: 100px;
+    text-align: right;
+  }
+    .pageCartItem__remove {
+      float: right;
+      background: none;
+      border: 0;
+      outline: 0;
+      color: #808080;
+      cursor: pointer;
+      font-size: 22px;
+    }
+    .pageCartItem__priceBefore {
+      display: inline-block;
+      color: #bfbfbf;
+      text-decoration: line-through;
+    }
+    .pageCartItem__totalPrice {
+      font-weight: 500;
+      font-size: 18px;
+      margin-left: 8px;
+    }

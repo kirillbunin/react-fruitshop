@@ -1,0 +1,98 @@
+.pageShopItem {
+  width: 31.5%;
+  margin-bottom: 40px;
+}
+@media (max-width: 1040px) {
+  .pageShopItem {
+    width: 48%;
+  }
+}
+  .pageShopItem__imageWrap {
+    position: relative;
+    overflow: hidden;
+    font-size: 0;
+  }
+    .pageShopItem__image {
+      max-width: 100%;
+      position: relative;
+    }
+    .pageShopItem__discountBadge {
+      position: absolute;
+      right: -40px;
+      bottom: 20px;
+      color: #fff;
+      background: #eb2a34;
+      padding: 6px 12px;
+      text-align: center;
+      width: 120px;
+      /*border-radius: 24px;*/
+      font-weight: 500;
+      font-size: 16px;
+      transform: rotate(-45deg);
+    }
+  .pageShopItem__info {
+    font-size: 18px;
+    margin-top: 12px;
+  }
+    .pageShopItem__title {}
+    .pageShopItem__price {
+      float: right;
+    }
+  .pageShopItem__subinfo {
+    color: #d9d9d9;
+    font-size: 14px;
+  }
+    .pageShopItem__subtitle {}
+    .pageShopItem__subprice {}
+  .pageShopItem__controls {
+    margin-top: 16px;
+  }
+    .pageShopItem__qtyDecrease,
+    .pageShopItem__qtyInput,
+    .pageShopItem__qtyIncrease,
+    .pageShopItem__submit {
+      border: 0;
+      padding: 0;
+      margin: 0;
+      background: 0;
+      display: inline-block;
+      text-align: center;
+      height: 48px;
+      vertical-align: top;
+      box-sizing: border-box;
+      outline: 0;
+    }
+      .pageShopItem__qtyDecrease[disabled],
+      .pageShopItem__qtyIncrease[disabled] {
+        cursor: default;
+      }
+    .pageShopItem__qtyDecrease {
+      width: 12%;
+      border: 1px #ececec solid;
+      border-right: 0;
+      cursor: pointer;
+      font-size: 18px;
+      color: #a8a8a8;
+    }
+    .pageShopItem__qtyInput {
+      width: 16%;
+      border: 0;
+      border-top: 1px #ececec solid;
+      border-bottom: 1px #ececec solid;
+    }
+    .pageShopItem__qtyIncrease {
+      width: 12%;
+      border-top: 1px #ececec solid;
+      border-bottom: 1px #ececec solid;
+      cursor: pointer;
+      font-size: 18px;
+      color: #a8a8a8;
+    }
+    .pageShopItem__submit {
+      width: 60%;
+      border: 1px #ececec solid;
+      background: #fafafa;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+    }
