@@ -14,6 +14,7 @@ class Cart extends Component {
   }
   render() {
     let cartItems = [];
+    let totalInCart = 0;
     this.props.cart.map((item) => {
       cartItems.push(
         <CartItem
@@ -23,13 +24,14 @@ class Cart extends Component {
           qty={item.qty}
         ></CartItem>
       )
+      totalInCart += item.qty;
     });
     if (cartItems.length > 0) {
       return (
         <aside className="pageCart">
           <div className="pageCart__header">
           <h2 className="pageCart__heading">Checkout</h2>
-          <span className="pageCart__totalItem">3 items total</span>
+          <span className="pageCart__totalItem">{totalInCart} { totalInCart === 1 ? 'item' : 'items'} total</span>
           </div>
           <div className="pageCartGroup">
           {cartItems}
